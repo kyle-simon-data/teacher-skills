@@ -1,0 +1,49 @@
+{
+  "title": "Network Security Sample Quiz",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "text": "Which type of malware spreads on its own without a host file?",
+      "choices": ["Virus", "Worm", "Trojan", "Spyware"],
+      "correct": [1],
+      "points": 2
+    },
+    {
+      "type": "multiple_choice",
+      "text": "Which protocol encrypts web traffic between a browser & a server?",
+      "choices": ["HTTP", "HTTPS", "FTP"],
+      "correct": [1]
+    },
+    {
+      "type": "true_false",
+      "text": "A firewall can filter traffic based on port numbers.",
+      "answer": true
+    },
+    {
+      "type": "matching",
+      "text": "Match the term to its description:",
+      "pairs": [
+        ["Hashing", "One-way function that produces a fixed-length digest"],
+        ["Encryption", "Reversible transformation using a key"],
+        ["Encoding", "Format change with no secret, such as Base64"]
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "text": "Which command shows the IP configuration on Windows?",
+      "choices": ["<code>ipconfig</code>", "<code>ifconfig</code>", "<code>netstat</code>", "<code>ping</code>"],
+      "correct": [0],
+      "html": true
+    },
+    {
+      "type": "essay",
+      "text": "Explain the difference between authentication and authorization.",
+      "answer": "Authentication verifies identity; authorization decides what that identity may access."
+    },
+    {
+      "type": "multiple_choice",
+      "text": "What does the acronym CIA stand for in security?",
+      "choices": ["Confidentiality, Integrity, Availability", "Control, Inspection, Audit"]
+    }
+  ]
+}
