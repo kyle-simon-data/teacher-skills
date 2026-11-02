@@ -9,6 +9,7 @@ Built by Kyle Simon for his teaching at Red Lion Area School District.
 | Skill | What it does |
 |---|---|
 | [LinkIt Exam View Converter](skills/linkit-examview-converter) | Turns an existing test and answer key into a file LinkIt! imports with the Exam View button, plus a spreadsheet of anything that needs manual entry |
+| [Guided Notes Builder](skills/guided-notes-builder) | Turns lesson slides into a print-ready student guided-notes packet and matching teacher key (Word and PDF), optionally checked against the unit test |
 
 More skills are on the way.
 
