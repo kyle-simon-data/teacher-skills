@@ -1,0 +1,76 @@
+{
+  "packet": {
+    "course": "Intro to Python",
+    "packet_title": "Strings and Operators",
+    "subtitle": "Unit 2 • Lessons 2.4-2.5",
+    "unit_label": "Unit 2",
+    "overview": "This unit covers how Python stores text as strings and how operators behave with them. After completing it, you will be able to write, trace and debug short programs that combine and repeat strings.",
+    "output_stem": "Intro_to_Python_Unit_2_Guided_Notes"
+  },
+  "lessons": [
+    {
+      "number": "2.4",
+      "title": "Strings",
+      "guiding_question": "How does Python store and display text?",
+      "targets": [
+        "I can create a string using single or double quotation marks.",
+        "I can use `len()` to find the length of a string."
+      ],
+      "sections": [
+        {
+          "heading": "What Is a String?",
+          "notes": [
+            ["A sequence of characters inside quotation marks is called a {{blank}}.", "string"],
+            ["Python accepts both single quotes and {{blank}} quotes around a string, as long as they match.", "double"],
+            ["The function `len()` returns the number of {{blank}} in a string.", "characters"],
+            {"code": "greeting = \"Hello\"\nprint(len(greeting))   # prints 5"},
+            ["Spaces and punctuation also count toward a string's {{blank}}.", "length"]
+          ]
+        }
+      ],
+      "review": [
+        {"question": "What is a string?", "answer": "A sequence of characters enclosed in matching single or double quotation marks."},
+        {"question": "What does `len(\"cat\")` return, and why?", "answer": "3, because the string contains three characters.", "lines": 2}
+      ]
+    },
+    {
+      "number": "2.5",
+      "title": "String Operators",
+      "guiding_question": "Which mathematical operators work on strings, and what do they do?",
+      "targets": [
+        "I can use the `+` and `*` operators on strings.",
+        "I can explain why a string and an integer cannot be combined without type conversion."
+      ],
+      "sections": [
+        {
+          "heading": "Operators and Strings",
+          "notes": [
+            ["Joining two strings with the `+` operator is called {{blank}}.", "concatenation"],
+            ["Multiplying a string by an integer, such as `\"a\" * 3`, {{blank}} the string.", "repeats"],
+            {"text": "Adding a string and an integer directly, such as `\"a\" + 3`, causes a {{blank}}.", "answers": ["TypeError"]},
+            ["The {{blank}} function converts a value into a string so it can be concatenated with text.", "str()"]
+          ]
+        }
+      ],
+      "organizers": [
+        {
+          "heading": "String Operator Behavior",
+          "columns": ["Expression", "Example", "Result"],
+          "rows": [
+            ["string + string", "\"a\" + \"b\"", "\"ab\""],
+            ["string * integer", "\"a\" * 3", "\"aaa\""],
+            ["string + integer", "\"a\" + 3", "TypeError"],
+            ["string + str(integer)", "\"a\" + str(3)", "\"a3\""]
+          ],
+          "given_columns": [0, 1],
+          "widths": [2, 2, 3]
+        }
+      ],
+      "review": [
+        {"question": "What is concatenation?", "answer": "Combining two strings side by side using the + operator."},
+        {"question": "Rewrite `print(\"Team size: \" + 4)` so that it runs without an error.", "answer": "`print(\"Team size: \" + str(4))`", "lines": 2},
+        {"question": "Why does `\"a\" + 3` cause a TypeError?", "answer": "Python cannot concatenate a string and an integer directly; the integer must first be converted with str()."}
+      ]
+    }
+  ]
+}
