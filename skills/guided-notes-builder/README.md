@@ -7,6 +7,16 @@ Give your AI assistant a slide deck (or other lesson materials), tell it the cou
 - **`..._Student.docx` / `.pdf`**: fill-in-the-blank notes, organizers with room to write, and a lesson review with ruled lines
 - **`..._Teacher_Key.docx` / `.pdf`**: the same packet with every answer filled in
 
+## Sample output
+
+Built from [`examples/sample_packet.json`](examples/sample_packet.json), a two-lesson Intro to Python packet:
+
+| Student packet | Teacher key |
+|---|---|
+| ![Student packet pages](examples/sample_output/preview_student.png) | ![Teacher key pages](examples/sample_output/preview_teacher_key.png) |
+
+Download the full files: student packet ([PDF](examples/sample_output/Intro_to_Python_Unit_2_Guided_Notes_Student.pdf), [Word](examples/sample_output/Intro_to_Python_Unit_2_Guided_Notes_Student.docx)) and teacher key ([PDF](examples/sample_output/Intro_to_Python_Unit_2_Guided_Notes_Teacher_Key.pdf), [Word](examples/sample_output/Intro_to_Python_Unit_2_Guided_Notes_Teacher_Key.docx)). The PDFs were exported with LibreOffice, which substitutes a similar font for Aptos; the Word files show the intended fonts.
+
 ## What the packets look like
 
 - A title page with the unit overview and contents
@@ -60,6 +70,7 @@ SKILL.md                          instructions the AI follows
 scripts/build_notes.py            builds, checks and renders the packet
 references/formatting-standard.md full formatting specification
 examples/sample_packet.json
+examples/sample_output/           sample packet and key (Word, PDF, previews)
 tests/test_build_notes.py
 ```
 
